@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="app.tsam.undefined.milanomaps.MainActivity" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/barracerca"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:autoText="true"
+        android:hint="searchbox"
+        android:textColor="#232323"
+        android:background="#e2ffffff"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="2dp"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/menu" />-->
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/openmenu"
+        android:background="@drawable/buttonmenu"
+        android:layout_alignTop="@+id/barracerca"
+        android:layout_marginLeft="15dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttongps"
+        android:background="@drawable/buttongps"
+        android:layout_alignTop="@+id/barracerca"
+        android:layout_marginLeft="-70dp"
+        android:layout_toRightOf="@+id/barracerca" />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/frecciasu"
+        android:layout_alignBottom="@+id/container"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:id="@+id/container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
